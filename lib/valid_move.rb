@@ -8,13 +8,11 @@ def valid_move?(board, index)
     #need to execute to see if the position is valid now (meaning that its between 0-8)
     valid = index.between?(0,8)
     if valid == true
-    return valid
-  else
-    valid != index.between?(0,8)
-    return valid
-  else
-    false
-  end
+      return valid
+      else
+      valid != index.between?(0,8)
+      return valid
+    end
 else position_taken?(board, index) == false #meaning the position is taken, needs to return false
     return false
   end
