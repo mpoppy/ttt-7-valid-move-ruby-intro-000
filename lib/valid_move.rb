@@ -4,13 +4,13 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 def valid_move?(board, index)
   valid = nil
-  if position_taken?(board, index) == false #this meaning that position is open
+  if position_taken?(board, index) == true #this meaning that position is open
     #need to execute to see if the position is valid now (meaning that its between 0-8)
     valid = index.between?(0,8)
     if valid == true
     return valid
   else return
-    false
+    true
   end
 else position_taken?(board, index) == true #meaning the position is taken, needs to return false
     return false
@@ -25,8 +25,8 @@ end
 def position_taken?(board,index)
   taken = nil
   if board[index] == " " || board[index] = "" || board[index] == nil
-    taken = false #this would mean spot is open, position is not taken
+    taken = true #this would mean spot is open, position is not taken
   else
-    taken = true #this would mean that position is taken
+    taken = false #this would mean that position is taken
   end
 end
