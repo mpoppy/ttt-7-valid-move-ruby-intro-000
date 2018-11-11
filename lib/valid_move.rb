@@ -1,5 +1,7 @@
 # code your #valid_move? method here
 
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
 def valid_move?(board, index)
   valid = nil
   if position_taken(board, index) == false #this meaning that position is open
