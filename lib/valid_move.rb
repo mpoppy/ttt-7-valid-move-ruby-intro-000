@@ -14,7 +14,7 @@ def valid_move?(board, index)
     return valid
   else
     false
-    end
+  end
 else position_taken?(board, index) == false #meaning the position is taken, needs to return false
     return false
   end
