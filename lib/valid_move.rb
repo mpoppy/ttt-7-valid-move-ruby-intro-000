@@ -6,7 +6,7 @@ def valid_move?(board, index)
   #valid = nil
   if position_taken?(board, index) == true #this meaning that position is open
     #need to execute to see if the position is valid now (meaning that its between 0-8)
-    if valid = index.between?(0,8)
+    if index.between?(0,8)
       true
     else
       false
