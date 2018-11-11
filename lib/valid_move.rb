@@ -24,8 +24,8 @@ end
 def position_taken?(board,index)
   taken = nil
   if board[index] == " " || board[index] = "" || board[index] == nil
-    taken = true #this would mean spot is open, position is not taken
+    true #this would mean spot is open, position is not taken
   else
-    taken = false #this would mean that position is taken
+    false #this would mean that position is taken
   end
 end
