@@ -1,9 +1,13 @@
 # code your #valid_move? method here
 
 def valid_move?(board, index)
+  valid = nil
   if position_taken(board, index) == false #this meaning that position is open
-
-
+    #need to execute to see if the position is valid now (meaning that its between 0-8)
+    valid = index.between?(0,8)
+    return valid
+  else position_taken(board, index) == true #meaning the position is taken
+    return false
   end
 end
 
