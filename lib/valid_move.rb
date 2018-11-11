@@ -8,8 +8,9 @@ end
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
 
 def position_taken(board,index)
-  if board[input] == " " || board[input] = ""
-    true
+  taken = nil
+  if board[input] == " " || board[input] = "" || board[index] == nil
+    taken = true
   else
-    false
+    taken = false
 end
