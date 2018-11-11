@@ -19,7 +19,7 @@ end
 #this method defines is the position is taken or not
 def position_taken?(board,index)
   taken = nil
-  if board[index] == " " || board[index] = "" || board[index] == nil
+  if board[index] == " " || board[index] == "" || board[index] == nil
     true #this would mean spot is open, position is not taken
   else
     false #this would mean that position is taken
