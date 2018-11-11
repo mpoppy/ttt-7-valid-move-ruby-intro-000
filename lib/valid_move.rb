@@ -9,7 +9,7 @@ def valid_move?(board, index)
     valid = index.between?(0,8)
     if valid == true
       return valid
-      else
+    else
       valid != index.between?(0,8)
       return valid
     end
